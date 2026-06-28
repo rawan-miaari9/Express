@@ -71,9 +71,6 @@ Follow these quick steps to get your development environment up and running:
 
 ### Step 1: Clone the Repository
 
-git clone [https://github.com/rawan-miaari9/First-Project.git](https://github.com/rawan-miaari9/First-Project.git)
-cd food-delivery-api
-
 ### Step 2: Install Dependencies
 Bash
 npm install
@@ -84,3 +81,9 @@ Create a file named .env in the root folder of your project (parallel to your pa
 PORT=5000
 MONGO_URI=mongodb+srv://your_username:your_password@cluster0.hugenxc.mongodb.net/food-delivery-api?retryWrites=true&w=majority
 
+Step 4: Run the Server in Development Mode
+This fires up the app with hot-reloading enabled, meaning the server will instantly save changes whenever you update your code files.
+
+npm run dev
+Step 5: Test with Postman
+Open Postman and direct your requests to your local host at: http://localhost:5000/api/<entity_route>
